@@ -222,3 +222,22 @@ h1{
   transform: translateY(-5px) scale(1.04);
   box-shadow: 0 22px 50px rgba(0, 100, 255, 0.35);
 }
+
+.map-list .map-link {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) max-content !important;
+  align-items: center !important;
+  gap: 24px !important;
+}
+
+.map-list .map-link strong {
+  min-width: 0 !important;
+}
+
+.map-list .map-link em {
+  white-space: nowrap !important;
+  font-style: normal !important;
+  justify-self: end !important;
+  min-width: max-content !important;
+}
+
