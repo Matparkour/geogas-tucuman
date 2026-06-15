@@ -45,7 +45,47 @@
 </section>
 <section class="section tight"><div class="container contact-grid">
   <div class="contact-card"><p class="kicker">Cómo llegar</p><h3>Sucursales</h3><div class="map-list"><a class="map-link reveal" href="https://maps.app.goo.gl/bTcDMDbGpbdiC7qn9" target="_blank" rel="noopener"><strong>GeoGas Jujuy<br><span>Jujuy 2400 · San Miguel de Tucumán</span></strong><em>Cómo llegar →</em></a><a class="map-link reveal" href="https://www.google.com/maps/search/?api=1&query=GeoGas+Plazoleta+Dorrego+Av+Saenz+Peña+890+Tucuman" target="_blank" rel="noopener"><strong>GeoGas Plazoleta Dorrego<br><span>Plazoleta Dorrego · Av. Sáenz Peña 890</span></strong><em>Cómo llegar →</em></a><a class="map-link reveal" href="https://maps.app.goo.gl/crHmd28jE6MBMd9f6" target="_blank" rel="noopener"><strong>GeoGas Belgrano y Camino del Perú<br><span>Av. Belgrano y Camino del Perú · San Miguel de Tucumán</span></strong><em>Cómo llegar →</em></a></div></div>
-  <div class="contact-card"><p class="kicker">Consulta</p><h3>Escribinos</h3><form class="form"><input type="text" placeholder="Nombre"><input type="email" placeholder="Email"><select><option>Quiero consultar por una sucursal</option><option>Full</option><option>Boxes</option><option>Combustibles / GNC</option><option>Trabajar con GeoGas</option></select><textarea placeholder="Mensaje"></textarea><button class="btn" type="button">Enviar consulta</button></form><p class="sources"></p></div>
+  <div class="contact-card">
+  <p class="kicker">Consulta</p>
+  <h3>Escribinos</h3>
+
+  <form id="contactForm" class="form">
+    <input 
+      type="text" 
+      name="nombre" 
+      placeholder="Nombre" 
+      autocomplete="name"
+      required
+    >
+
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="Email" 
+      autocomplete="email"
+      required
+    >
+
+    <select name="motivo" required>
+      <option value="Quiero consultar por una sucursal">Quiero consultar por una sucursal</option>
+      <option value="Quiero consultar por Full">Full</option>
+      <option value="Quiero consultar por Boxes">Boxes</option>
+      <option value="Combustibles / GNC">Combustibles / GNC</option>
+      <option value="Trabajar con GeoGas">Trabajar con GeoGas</option>
+      <option value="Otra consulta">Otra consulta</option>
+    </select>
+
+    <textarea 
+      name="mensaje" 
+      placeholder="Mensaje" 
+      required
+    ></textarea>
+
+    <button class="btn" type="submit">Enviar consulta</button>
+
+    <p id="formMessage" class="form-message"></p>
+  </form>
+</div>
 </div></section>
 <section class="section"><div class="container cta-panel reveal"><div><p class="kicker">Instagram</p><h2>Seguinos para novedades, beneficios y promos.</h2><p>La forma más directa de mantener la web actualizada es enlazar cada promo nueva desde el Instagram oficial.</p></div><a class="btn" href="https://www.instagram.com/geogastucuman/" target="_blank" rel="noopener">Abrir Instagram</a></div></section>
 
